@@ -1,0 +1,8 @@
+{% extends "home/base.html" %}
+{% block content %}
+    {% for update in updates %}
+        <h1>{{ update.title }}</h1>
+        <p>By {{ update.author }} on {{ update.date_posted }}</p>
+        <p> {{ update.content }} </p>
+    {% endfor %}
+{% endblock content %}
